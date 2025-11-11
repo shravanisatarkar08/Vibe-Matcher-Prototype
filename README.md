@@ -1,7 +1,6 @@
 # Vibe-Matcher-Prototype
 
-
-Vibe Matcher is a prototype recommendation system that matches products to a user's natural-language "vibe" query. Product descriptions are converted into **vector embeddings** using **SentenceTransformers**, and **cosine similarity** identifies the top-3 matches. The system handles low-similarity queries and includes visualizations. It can be extended with **OpenAI embeddings** or a **vector database** for production deployment.
+Vibe Matcher is a prototype recommendation system that matches products to a user's natural-language "vibe" query. Product descriptions are converted into **vector embeddings** using **SentenceTransformers**, and product-query similarity is used for recommendations.
 
 ## Features
 - Converts product descriptions into vector embeddings.
@@ -17,30 +16,31 @@ Vibe Matcher is a prototype recommendation system that matches products to a use
 - `assets/` — Optional folder for screenshots of outputs or plots.
 
 ## Setup
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/Vibe-Matcher-Prototype.git
-Navigate to the folder:
 
-bash
-Copy code
-cd Vibe-Matcher-Prototype
-Install dependencies:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/shravanisatarkar08/Vibe-Matcher-Prototype.git
+   cd Vibe-Matcher-Prototype
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Open the notebook in Colab or Jupyter to run:
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-bash
-Copy code
-jupyter notebook Vibe_Matcher.ipynb
-Notes
-Local embeddings are used for fast experimentation.
+3. **Open the notebook to run:**
+   - In Jupyter:
+     ```bash
+     jupyter notebook Vibe_Matcher.ipynb
+     ```
+   - Or open `Vibe_Matcher.ipynb` directly in Google Colab.
 
-OpenAI embeddings or a vector database can be integrated for production.
+---
 
-Lightweight, reproducible, and easy to extend.
+**Notes:**
+- The prototype uses local embeddings for fast experimentation.
+- For production use, you can integrate OpenAI embeddings or connect to a vector database.
+- The codebase is lightweight, reproducible, and easy to extend.
 
-#Author
+## Author
 Shravani Satarkar — B.Tech CSE (AIML), GH Raisoni College of Engineering
